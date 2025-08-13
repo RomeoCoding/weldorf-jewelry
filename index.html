@@ -8,24 +8,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700;6..96,900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              'primary': '#D97706', // amber-600
-              'primary-dark': '#B45309', // amber-700
-              'primary-light': '#FBBF24', // amber-400
-              'accent': '#FBCFE8', // pink-200
-              'accent-light': '#FCE7F3', // pink-100
-              'background': '#FFFCF9',
-              'text': '#4B5563', // gray-600
-              'heading': '#1F2937', // gray-800
+              'primary': '#D16C85', // Darker Dusty Rose
+              'primary-dark': '#BF5E76',
+              'primary-light': '#E39AAD',
+              'accent': '#F5EFF1', // Soft Pinkish-White
+              'accent-light': '#FCF8F9',
+              'background': '#FFFFFF',
+              'text': '#4F4A4A', // Softer Black
+              'heading': '#2E2929', // Darker, Softer Black
             },
             fontFamily: {
-              'serif': ['"Bodoni Moda"', 'serif'],
-              'sans': ['Inter', 'sans-serif'],
+              'serif': ['"Playfair Display"', 'serif'],
+              'sans': ['"Sora"', 'sans-serif'],
+              'brand': ['"Italiana"', 'sans-serif'],
+            },
+            keyframes: {
+              'fade-in-down': {
+                  '0%': { opacity: '0', transform: 'translateY(-10px)' },
+                  '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'fade-in': {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+              },
+              'kenburns': {
+                  '0%': { transform: 'scale(1) translate(0, 0)' },
+                  '100%': { transform: 'scale(1.1) translate(-1%, 1%)' },
+              }
+            },
+            animation: {
+                'fade-in-down': 'fade-in-down 0.3s ease-out forwards',
+                'fade-in': 'fade-in 0.3s ease-out forwards',
+                'kenburns': 'kenburns 15s ease-out infinite alternate',
             }
           }
         }
@@ -34,6 +54,14 @@
     <style>
       html {
         scroll-behavior: smooth;
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* General transition for a smoother feel */
+      * {
+        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
       }
       /* Accessibility Styles */
       html[data-font-scale="1.1"] { font-size: 110%; }
@@ -46,6 +74,11 @@
       html[data-high-contrast='true'] [class*="bg-"] {
         background-color: #000 !important;
       }
+       html[data-high-contrast='true'] .backdrop-blur-lg,
+       html[data-high-contrast='true'] .backdrop-blur-sm {
+         backdrop-filter: none !important;
+         -webkit-backdrop-filter: none !important;
+       }
       html[data-high-contrast='true'] [class*="text-"] {
         color: #fff !important;
       }
@@ -77,7 +110,12 @@
     "react/": "https://esm.sh/react@^19.1.1/",
     "react": "https://esm.sh/react@^19.1.1",
     "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
-    "react-feather": "https://esm.sh/react-feather@2.0.10"
+    "react-router-dom": "https://esm.sh/react-router-dom@6.25.1",
+    "react-router-dom/": "https://esm.sh/react-router-dom@6.25.1/",
+    "react-feather": "https://esm.sh/react-feather@2.0.10",
+    "path": "https://esm.sh/path@^0.12.7",
+    "vite": "https://esm.sh/vite@^7.1.2",
+    "url": "https://esm.sh/url@^0.11.4"
   }
 }
 </script>

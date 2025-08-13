@@ -1,81 +1,67 @@
-import { Product, InstagramPost, Testimonial, PressLogo } from './types';
+import { Product, InstagramPost, Testimonial, PressLogo, NavItem } from './types';
 
-export const FEATURED_PRODUCTS: Product[] = [
+export const NAV_ITEMS: NavItem[] = [
   {
-    id: 1,
-    name: 'The Weldorf Solitaire',
-    category: 'Engagement Rings',
-    price: '$18,500',
-    imageUrl: 'https://picsum.photos/seed/jewelry1/800/1000',
+    label: 'Jewelry',
+    href: '/jewelry',
+    children: [
+      { label: 'Rings', href: '/jewelry/rings' },
+      { label: 'Necklaces', href: '/jewelry/necklaces' },
+      { label: 'Bracelets', href: '/jewelry/bracelets' },
+      { label: 'Earrings', href: '/jewelry/earrings' },
+    ],
   },
-  {
-    id: 2,
-    name: 'Orion\'s Belt Bracelet',
-    category: 'Bracelets',
-    price: '$22,000',
-    imageUrl: 'https://picsum.photos/seed/jewelry2/800/1000',
-  },
-  {
-    id: 3,
-    name: 'The Empress Necklace',
-    category: 'Necklaces',
-    price: '$35,750',
-    imageUrl: 'https://picsum.photos/seed/jewelry3/800/1000',
-  },
-   {
-    id: 4,
-    name: 'Celestial Drop Earrings',
-    category: 'Earrings',
-    price: '$9,800',
-    imageUrl: 'https://picsum.photos/seed/jewelry4/800/1000',
-  },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Gifts', href: '/gifts' },
+  { label: 'Our Story', href: '/#our-story', isAnchor: true },
+  { label: 'Bespoke', href: '/#bespoke', isAnchor: true },
 ];
 
-export const NAV_LINKS = ['Collection', 'Showcase', 'Our Story', 'Bespoke', 'Contact'];
+export const ALL_PRODUCTS: Product[] = [
+  { id: 1, name: 'The Weldorf Solitaire', category: 'Rings', subCategory: 'Solitaire Rings', price: '$18,500', imageUrl: 'https://picsum.photos/seed/jewelry1/800/1000' },
+  { id: 2, name: 'Orion\'s Belt Bracelet', category: 'Bracelets', subCategory: 'Diamond Bracelets', price: '$22,000', imageUrl: 'https://picsum.photos/seed/jewelry2/800/1000' },
+  { id: 3, name: 'The Empress Necklace', category: 'Necklaces', subCategory: 'Pendant Necklaces', price: '$35,750', imageUrl: 'https://picsum.photos/seed/jewelry3/800/1000' },
+  { id: 4, name: 'Celestial Drop Earrings', category: 'Earrings', subCategory: 'Drop Earrings', price: '$9,800', imageUrl: 'https://picsum.photos/seed/jewelry4/800/1000' },
+  { id: 5, name: 'The Sovereign Signet', category: 'Rings', subCategory: 'Signet Rings', price: '$12,300', imageUrl: 'https://picsum.photos/seed/jewelry5/800/1000' },
+  { id: 6, name: 'River of Light Tennis Bracelet', category: 'Bracelets', subCategory: 'Diamond Bracelets', price: '$45,000', imageUrl: 'https://picsum.photos/seed/jewelry6/800/1000' },
+  { id: 7, name: 'Midnight Sapphire Pendant', category: 'Necklaces', subCategory: 'Pendant Necklaces', price: '$19,900', imageUrl: 'https://picsum.photos/seed/jewelry7/800/1000' },
+  { id: 8, name: 'Sunburst Diamond Studs', category: 'Earrings', subCategory: 'Stud Earrings', price: '$7,200', imageUrl: 'https://picsum.photos/seed/jewelry8/800/1000' },
+  { id: 9, name: 'Eternal Love Band', category: 'Rings', subCategory: 'Eternity Bands', price: '$6,800', imageUrl: 'https://picsum.photos/seed/jewelry9/800/1000' },
+  { id: 10, name: 'Athena Link Bracelet', category: 'Bracelets', subCategory: 'Chain Bracelets', price: '$15,500', imageUrl: 'https://picsum.photos/seed/jewelry10/800/1000' },
+  { id: 11, name: 'The Rose Gold Locket', category: 'Necklaces', subCategory: 'Locket Necklaces', price: '$8,450', imageUrl: 'https://picsum.photos/seed/jewelry11/800/1000' },
+  { id: 12, name: 'Emerald Halo Earrings', category: 'Earrings', subCategory: 'Drop Earrings', price: '$28,000', imageUrl: 'https://picsum.photos/seed/jewelry12/800/1000' },
+  { id: 13, name: 'The Statesman Watch Links', category: 'Gifts for Him', price: '$4,200', imageUrl: 'https://picsum.photos/seed/jewelry13/800/1000' },
+  { id: 14, name: 'Onyx Cufflinks', category: 'Gifts for Him', price: '$3,100', imageUrl: 'https://picsum.photos/seed/jewelry14/800/1000' },
+  { id: 15, name: 'Monogrammed Tie Bar', category: 'Gifts for Him', price: '$1,900', imageUrl: 'https://picsum.photos/seed/jewelry15/800/1000' },
+  { id: 16, name: 'Woven Gold Bangle', category: 'Gifts for Her', price: '$9,600', imageUrl: 'https://picsum.photos/seed/jewelry16/800/1000' },
+  { id: 17, name: 'Diamond Initial Pendant', category: 'Gifts for Her', price: '$5,300', imageUrl: 'https://picsum.photos/seed/jewelry17/800/1000' },
+  { id: 18, name: 'Birthstone Charm Bracelet', category: 'Gifts for Her', price: '$7,800', imageUrl: 'https://picsum.photos/seed/jewelry18/800/1000' },
+];
+
+export const GALLERY_IMAGES = [
+    { src: 'https://picsum.photos/seed/gallery1/800/1200', alt: 'A glance over the shoulder.' },
+    { src: 'https://picsum.photos/seed/gallery2/800/1000', alt: 'The fine details of a Weldorf creation.' },
+    { src: 'https://picsum.photos/seed/gallery3/800/600', alt: 'Our Beverly Hills boutique entrance.' },
+    { src: 'https://picsum.photos/seed/gallery4/800/1200', alt: 'A moment of quiet elegance.' },
+    { src: 'https://picsum.photos/seed/gallery5/800/1000', alt: 'The Empress Necklace in its element.' },
+    { src: 'https://picsum.photos/seed/gallery6/800/1200', alt: 'Craftsmanship in progress.' },
+    { src: 'https://picsum.photos/seed/gallery7/800/600', alt: 'The sparkle of a freshly set stone.' },
+    { src: 'https://picsum.photos/seed/gallery8/800/1000', alt: 'Weldorf style on the streets of Paris.' },
+    { src: 'https://picsum.photos/seed/gallery9/800/1200', alt: 'Ready for the evening.' },
+    { src: 'https://picsum.photos/seed/gallery10/800/1000', alt: 'Our signature packaging.' },
+    { src: 'https://picsum.photos/seed/gallery11/800/600', alt: 'The showcase solitaire ring.' },
+    { src: 'https://picsum.photos/seed/gallery12/800/1200', alt: 'Reflections of beauty.' },
+];
+
+export const FEATURED_PRODUCTS: Product[] = ALL_PRODUCTS.slice(0, 4);
 
 export const INSTAGRAM_POSTS: InstagramPost[] = [
-  {
-    id: 1,
-    imageUrl: 'https://picsum.photos/seed/insta1/1000/1000',
-    postUrl: 'https://www.instagram.com/',
-    likes: 1234,
-    comments: 56,
-  },
-  {
-    id: 2,
-    imageUrl: 'https://picsum.photos/seed/insta2/1000/1000',
-    postUrl: 'https://www.instagram.com/',
-    likes: 2453,
-    comments: 89,
-  },
-  {
-    id: 3,
-    imageUrl: 'https://picsum.photos/seed/insta3/1000/1000',
-    postUrl: 'https://www.instagram.com/',
-    likes: 987,
-    comments: 32,
-  },
-  {
-    id: 4,
-    imageUrl: 'https://picsum.photos/seed/insta4/1000/1000',
-    postUrl: 'https://www.instagram.com/',
-    likes: 3102,
-    comments: 121,
-  },
-  {
-    id: 5,
-    imageUrl: 'https://picsum.photos/seed/insta5/1000/1000',
-    postUrl: 'https://www.instagram.com/',
-    likes: 1876,
-    comments: 77,
-  },
-  {
-    id: 6,
-    imageUrl: 'https://picsum.photos/seed/insta6/1000/1000',
-    postUrl: 'https://www.instagram.com/',
-    likes: 4031,
-    comments: 205,
-  },
+  { id: 1, imageUrl: 'https://picsum.photos/seed/insta1/1000/1000', postUrl: 'https://www.instagram.com/', likes: 1234, comments: 56 },
+  { id: 2, imageUrl: 'https://picsum.photos/seed/insta2/1000/1000', postUrl: 'https://www.instagram.com/', likes: 2453, comments: 89 },
+  { id: 3, imageUrl: 'https://picsum.photos/seed/insta3/1000/1000', postUrl: 'https://www.instagram.com/', likes: 987, comments: 32 },
+  { id: 4, imageUrl: 'https://picsum.photos/seed/insta4/1000/1000', postUrl: 'https://www.instagram.com/', likes: 3102, comments: 121 },
+  { id: 5, imageUrl: 'https://picsum.photos/seed/insta5/1000/1000', postUrl: 'https://www.instagram.com/', likes: 1876, comments: 77 },
+  { id: 6, imageUrl: 'https://picsum.photos/seed/insta6/1000/1000', postUrl: 'https://www.instagram.com/', likes: 4031, comments: 205 },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [

@@ -2,9 +2,18 @@ export interface Product {
   id: number;
   name: string;
   category: string;
+  subCategory?: string;
   price: string;
   imageUrl: string;
 }
+
+export interface NavItem {
+  label: string;
+  href: string;
+  isAnchor?: boolean;
+  children?: NavItem[];
+}
+
 
 export interface AccessibilityState {
   fontSizeMultiplier: number;

@@ -1,51 +1,44 @@
+import React from 'react';
+import AnimatedSection from './AnimatedSection';
 
-import React, { useState, useEffect } from 'react';
+const HERO_VIDEO_URL = 'https://videos.pexels.com/video-files/8406797/8406797-hd_1920_1080_30fps.mp4';
 
-const HERO_IMAGES = [
-  'https://picsum.photos/seed/hero1/1920/1280',
-  'https://picsum.photos/seed/hero2/1920/1280',
-  'https://picsum.photos/seed/hero3/1920/1280',
-];
 
 const Hero: React.FC = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % HERO_IMAGES.length);
-    }, 5000); // Change image every 5 seconds
-
-    return () => clearInterval(timer);
-  }, []);
-
   return (
-    <section id="home" className="relative h-[85vh] w-full flex items-center justify-center text-white overflow-hidden">
-      <div className="absolute inset-0 bg-black/40 z-10"></div>
+    <section id="home" className="relative h-screen w-full flex items-center justify-center text-white overflow-hidden">
+      <div className="absolute inset-0 bg-black/50 z-10"></div>
       
-      {HERO_IMAGES.map((src, index) => (
-        <div
-          key={src}
-          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
-          style={{ backgroundImage: `url(${src})`, transform: `scale(${index === currentImageIndex ? 1.05 : 1})`, transition: 'transform 7s ease-in-out, opacity 1s ease-in-out' }}
-        ></div>
-      ))}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute z-0 w-auto min-w-full min-h-full max-w-none"
+        style={{ objectFit: 'cover' }}
+      >
+        <source src={HERO_VIDEO_URL} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
       <div className="relative z-20 text-center p-6">
-        <h2 className="text-xl md:text-2xl font-sans tracking-widest uppercase text-accent-light">
-          Timeless by Design
-        </h2>
-        <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif font-bold my-4 text-white drop-shadow-lg">
-          Weldorf
-        </h1>
-        <p className="max-w-xl mx-auto text-base md:text-lg font-sans text-gray-200 mb-8">
-          Discover a world where classic elegance meets contemporary artistry. Each piece is a testament to our dedication to beauty and quality.
-        </p>
-        <a
-          href="#collection"
-          className="bg-transparent border-2 border-white text-white font-sans px-8 py-3 rounded-full hover:bg-white hover:text-heading transition-all duration-300 transform hover:scale-105"
-        >
-          Explore Collections
-        </a>
+        <AnimatedSection>
+          <h2 className="text-xl md:text-2xl font-sans tracking-widest uppercase text-white/90">
+            Timeless by Design
+          </h2>
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif font-black my-4 text-white" style={{textShadow: '2px 2px 10px rgba(0,0,0,0.3)'}}>
+            Weldorf
+          </h1>
+          <p className="max-w-xl mx-auto text-base md:text-lg font-sans text-gray-200 mb-10">
+            Discover a world where classic elegance meets contemporary artistry. Each piece is a testament to our dedication to beauty and quality.
+          </p>
+          <a
+            href="#collection"
+            className="bg-transparent border-2 border-white text-white font-sans font-medium px-10 py-4 rounded-full hover:bg-white hover:text-heading transition-all duration-300 transform hover:scale-105"
+          >
+            Explore Collections
+          </a>
+        </AnimatedSection>
       </div>
     </section>
   );

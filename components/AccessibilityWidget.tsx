@@ -34,7 +34,7 @@ const AccessibilityWidget: React.FC = () => {
   }
 
   return (
-    <div className="fixed bottom-5 right-5 bg-white shadow-2xl rounded-lg w-72 border border-gray-200 z-50 p-4 font-sans">
+    <div className="fixed bottom-0 right-0 sm:bottom-5 sm:right-5 bg-white shadow-2xl rounded-none sm:rounded-lg w-full sm:w-72 border-t sm:border border-gray-200 z-50 p-4 font-sans animate-fade-in">
       <div className="flex justify-between items-center mb-4">
         <h4 className="font-bold text-heading text-lg">Accessibility</h4>
         <button onClick={() => setIsOpen(false)} className="text-gray-500 hover:text-gray-800" aria-label="Close Accessibility Menu">
