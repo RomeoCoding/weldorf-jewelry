@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weldorf - Beverly Hills</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700;6..96,900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#D97706', // amber-600
+              'primary-dark': '#B45309', // amber-700
+              'primary-light': '#FBBF24', // amber-400
+              'accent': '#FBCFE8', // pink-200
+              'accent-light': '#FCE7F3', // pink-100
+              'background': '#FFFCF9',
+              'text': '#4B5563', // gray-600
+              'heading': '#1F2937', // gray-800
+            },
+            fontFamily: {
+              'serif': ['"Bodoni Moda"', 'serif'],
+              'sans': ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Accessibility Styles */
+      html[data-font-scale="1.1"] { font-size: 110%; }
+      html[data-font-scale="1.2"] { font-size: 120%; }
+      
+      html[data-high-contrast='true'] body {
+        background-color: #000 !important;
+        color: #fff !important;
+      }
+      html[data-high-contrast='true'] [class*="bg-"] {
+        background-color: #000 !important;
+      }
+      html[data-high-contrast='true'] [class*="text-"] {
+        color: #fff !important;
+      }
+       html[data-high-contrast='true'] [class*="text-heading"] {
+        color: #fff !important;
+      }
+      html[data-high-contrast='true'] h1, 
+      html[data-high-contrast='true'] h2, 
+      html[data-high-contrast='true'] h3, 
+      html[data-high-contrast='true'] h4 {
+        color: #fff !important;
+      }
+      html[data-high-contrast='true'] a,
+      html[data-high-contrast='true'] button {
+        border-color: #fff !important;
+      }
+       html[data-high-contrast='true'] .bg-primary,
+       html[data-high-contrast='true'] .bg-accent {
+        background-color: #fff !important;
+        color: #000 !important;
+       }
+       html[data-links-underlined='true'] a {
+        text-decoration: underline;
+       }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react-feather": "https://esm.sh/react-feather@2.0.10"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
