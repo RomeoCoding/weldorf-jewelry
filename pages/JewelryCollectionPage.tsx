@@ -6,7 +6,7 @@ import AnimatedSection from '../components/AnimatedSection';
 import { ChevronDown } from 'react-feather';
 
 const collectionDetails: { [key: string]: { title: string; description: string; heroImage: string } } = {
-  rings: { title: 'Rings', description: 'Timeless symbols of commitment and style.', heroImage: '/rings/rings_categoy.webp.jpeg' },
+  rings: { title: 'Rings', description: 'Timeless symbols of commitment and style.', heroImage: '/rings/rings_category.webp.jpeg' },
   necklaces: { title: 'Necklaces', description: 'Adorn your neckline with unparalleled elegance.', heroImage: '/necklaces/pendants_category.webp.jpeg' },
   bracelets: { title: 'Bracelets', description: 'Grace your wrist with our exquisite designs.', heroImage: '/bracelets/bangle_category.webp.jpeg' },
   earrings: { title: 'Earrings', description: 'Illuminate your features with sparkling details.', heroImage: '/earrings/earrings_category.webp.jpeg' },
