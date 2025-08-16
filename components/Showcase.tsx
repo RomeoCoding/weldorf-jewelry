@@ -25,7 +25,7 @@ const Showcase: React.FC = () => {
             <AnimatedSection>
               <div className="bg-accent-light rounded-lg p-6 lg:p-10">
                  <img 
-                    src="/rings/rings_category.webp.jpeg" 
+                    src="/rings/2aabda1c-1a0a-408e-b8ee-7ec3a632187b.jpeg" 
                     alt="The Lumina Solitaire Ring" 
                     className="rounded-lg shadow-2xl w-full h-auto"
                 />
