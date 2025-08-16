@@ -20,7 +20,7 @@ export const NAV_ITEMS: NavItem[] = [
 export const ALL_PRODUCTS: Product[] = [
   { id: 1, name: 'The Weldorf Solitaire', category: 'Rings', subCategory: 'Solitaire Rings', price: '$18,500', imageUrl: '/rings/0.65-CT-Diamond-Stars-Multicolor-Pinky-Ring-in-18K-Yellow-Gold.webp.jpeg' },
   { id: 2, name: 'Orion\'s Belt Bracelet', category: 'Bracelets', subCategory: 'Diamond Bracelets', price: '$22,000', imageUrl: '/bracelets/2.45-CT-Diamond-Stars-Bracelet-copy.webp.jpeg' },
-  { id: 3, name: 'The Empress Necklace', category: 'Necklaces', subCategory: 'Pendant Necklaces', price: '$35,750', imageUrl: '/necklaces/chaos_diamonds_pendantV1.webp._1.jpeg' },
+  { id: 3, name: 'The Empress Necklace', category: 'Necklaces', subCategory: 'Pendant Necklaces', price: '$35,750', imageUrl: '/necklaces/chaos_diamonds_pendantV1.webp.jpeg' },
   { id: 4, name: 'Celestial Drop Earrings', category: 'Earrings', subCategory: 'Drop Earrings', price: '$9,800', imageUrl: '/earrings/diamond-hoop-earrings-600x600.webp.jpeg' },
   { id: 5, name: 'The Sovereign Signet', category: 'Rings', subCategory: 'Signet Rings', price: '$12,300', imageUrl: '/rings/2_a02.jpg.jpeg' },
   { id: 6, name: 'River of Light Tennis Bracelet', category: 'Bracelets', subCategory: 'Diamond Bracelets', price: '$45,000', imageUrl: '/bracelets/Cluster-Diamond-Bracelet-S1CN1T0023.webp.jpeg' },
@@ -43,7 +43,7 @@ export const GALLERY_IMAGES = [
     { src: '/earrings/Tourmaline-and-Pink-Sapphire-Earrings-in-18K-Pink-Gold1.webp.jpeg', alt: 'Exquisite tourmaline and sapphire earrings.' },
     { src: '/heromedia/workinghands.jpeg', alt: 'The artisan\'s touch: crafting a masterpiece.' },
     { src: '/bracelets/Cluster-Diamond-Bracelet-S1CN1T0023.webp.jpeg', alt: 'A classic cluster diamond bracelet on display.' },
-    { src: '/necklaces/chaos_diamonds_pendantV1.webp._1.jpeg', alt: 'The intricate design of our Chaos diamond pendant.' },
+    { src: '/necklaces/chaos_diamonds_pendantV1.webp.jpeg', alt: 'The intricate design of our Chaos diamond pendant.' },
     { src: '/rings/2aabda1c-1a0a-408e-b8ee-7ec3a632187b.jpeg', alt: 'A timeless solitaire, symbol of elegance.' },
     { src: '/bracelets/Sedimentary-ruby-diamond-band3-600x600.webp.jpeg', alt: 'A bold statement with ruby and diamond.' },
     { src: '/earrings/diamond-hoop-earrings-600x600.webp.jpeg', alt: 'Sparkling diamond hoops, perfect for any occasion.' },
