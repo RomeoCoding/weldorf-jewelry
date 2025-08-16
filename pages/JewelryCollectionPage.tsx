@@ -6,12 +6,12 @@ import AnimatedSection from '../components/AnimatedSection';
 import { ChevronDown } from 'react-feather';
 
 const collectionDetails: { [key: string]: { title: string; description: string; heroImage: string } } = {
-  rings: { title: 'Rings', description: 'Timeless symbols of commitment and style.', heroImage: '/rings/rings_categoy.webp' },
-  necklaces: { title: 'Necklaces', description: 'Adorn your neckline with unparalleled elegance.', heroImage: '/necklaces/pendants_category.webp' },
-  bracelets: { title: 'Bracelets', description: 'Grace your wrist with our exquisite designs.', heroImage: '/bracelets/bangle_category.webp' },
-  earrings: { title: 'Earrings', description: 'Illuminate your features with sparkling details.', heroImage: '/earrings/earrings_category.webp' },
-  'for-her': { title: 'Gifts For Her', description: 'Find the perfect token of affection and elegance.', heroImage: '/rings/0.65-CT-Diamond-Stars-Multicolor-Pinky-Ring-in-18K-Yellow-Gold-600x600.webp' },
-  'for-him': { title: 'Gifts For Him', description: 'Discover distinguished gifts of timeless sophistication.', heroImage: '/bracelets/Sedimentary-ruby-diamond-band-600x600.webp' },
+  rings: { title: 'Rings', description: 'Timeless symbols of commitment and style.', heroImage: '/rings/rings_categoy.webp.jpeg' },
+  necklaces: { title: 'Necklaces', description: 'Adorn your neckline with unparalleled elegance.', heroImage: '/necklaces/pendants_category.webp.jpeg' },
+  bracelets: { title: 'Bracelets', description: 'Grace your wrist with our exquisite designs.', heroImage: '/bracelets/bangle_category.webp.jpeg' },
+  earrings: { title: 'Earrings', description: 'Illuminate your features with sparkling details.', heroImage: '/earrings/earrings_category.webp.jpeg' },
+  'for-her': { title: 'Gifts For Her', description: 'Find the perfect token of affection and elegance.', heroImage: '/rings/0.65-CT-Diamond-Stars-Multicolor-Pinky-Ring-in-18K-Yellow-Gold-600x600.webp.jpeg' },
+  'for-him': { title: 'Gifts For Him', description: 'Discover distinguished gifts of timeless sophistication.', heroImage: '/bracelets/Sedimentary-ruby-diamond-band-600x600.webp.jpeg' },
   default: { title: 'Our Collection', description: 'Discover pieces that tell a story of elegance and artistry.', heroImage: '/rings/2aabda1c-1a0a-408e-b8ee-7ec3a632187b.jpeg' },
 };
 

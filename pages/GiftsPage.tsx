@@ -39,8 +39,8 @@ const GiftSection: React.FC<GiftSectionProps> = ({ to, title, imageUrl }) => {
 const GiftsPage: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row min-h-screen">
-      <GiftSection to="/gifts/for-her" title="For Her" imageUrl="/rings/0.65-CT-Diamond-Stars-Multicolor-Pinky-Ring-in-18K-Yellow-Gold.webp" />
-      <GiftSection to="/gifts/for-him" title="For Him" imageUrl="/bracelets/Sedimentary-ruby-diamond-band2.webp" />
+      <GiftSection to="/gifts/for-her" title="For Her" imageUrl="/rings/0.65-CT-Diamond-Stars-Multicolor-Pinky-Ring-in-18K-Yellow-Gold.webp.jpeg" />
+      <GiftSection to="/gifts/for-him" title="For Him" imageUrl="/bracelets/Sedimentary-ruby-diamond-band2-600x600.webp.jpeg" />
     </div>
   );
 };

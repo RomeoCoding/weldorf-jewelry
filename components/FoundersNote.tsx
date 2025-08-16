@@ -9,7 +9,7 @@ const FoundersNote: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
             <div className="md:w-2/5">
               <img
-                src="/rings/2_a02.jpg"
+                src="/rings/2_a02.jpg.jpeg"
                 alt="Founders of Weldorf"
                 className="rounded-lg shadow-xl object-cover w-full h-full"
               />
