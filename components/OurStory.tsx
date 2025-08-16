@@ -10,7 +10,7 @@ const OurStory: React.FC = () => {
             <div className="md:w-1/2">
               <div className="relative">
                 <img 
-                  src="https://picsum.photos/seed/story/1000/1200" 
+                  src="/earrings/Tourmaline-and-Pink-Sapphire-Earrings-in-18K-Pink-Gold1.webp" 
                   alt="Boutique Interior" 
                   className="rounded-lg shadow-2xl w-full z-10 relative"
                 />

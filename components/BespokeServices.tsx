@@ -10,7 +10,7 @@ const BespokeServices: React.FC = () => {
             <div className="md:w-1/2">
               <div className="relative">
                  <img 
-                  src="https://picsum.photos/seed/bespoke/1000/1200" 
+                  src="/heromedia/workinghands.jpeg" 
                   alt="Jeweler working on a custom piece" 
                   className="rounded-lg shadow-2xl w-full z-10 relative"
                 />

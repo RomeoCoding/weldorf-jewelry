@@ -1,7 +1,7 @@
 import React from 'react';
 import AnimatedSection from './AnimatedSection';
 
-const HERO_VIDEO_URL = 'https://videos.pexels.com/video-files/8406797/8406797-hd_1920_1080_30fps.mp4';
+const HERO_VIDEO_URL = '/heromedia/herovid1.mp4';
 
 
 const Hero: React.FC = () => {
